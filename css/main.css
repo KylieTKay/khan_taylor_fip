@@ -19,6 +19,19 @@ div,p,body,header,footer,section,article,nav {
 	padding: 0; 
 }	
 
+h1, h2 {
+	font-family: 'Alice', serif;
+}
+
+h3, h4 {font-family: 'Yeseva One', cursive;
+}
+
+p {font-family: 'Prata', serif;
+}
+
+li, input, a {font-family: 'Bebas Neue', cursive;
+}
+
 img { 
 	border: none; /*Remove border if image is a link*/
 	margin: 0; 
@@ -72,7 +85,7 @@ you work on and the intended audience */
 	padding-bottom: 10px;
 }
 
-#header-box1 {
+#logo {
 	grid-column: 1/3;
 	/* Remove as content will dictate height */
 	height: 80px;
@@ -82,6 +95,11 @@ you work on and the intended audience */
 	grid-column: 3/11;
 	/* Remove as content will dictate height */
 	height: 80px;
+}
+#main-nav li {
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 50px;
 }
 
 #header-box2 {
