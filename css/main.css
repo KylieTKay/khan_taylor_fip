@@ -93,24 +93,45 @@ you work on and the intended audience */
 /* Specific to index page desktop  */
 
 #hero {
-	margin-top: 100px;
+	margin-top: 0px;
+	background: url("https://via.placeholder.com/674x582");
 }
 
-#hero-text {
-	grid-column: 1/8;
+
+.hero-text {
+	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 582px;
+	height: 700px;
+	/*added*/
+	text-align: left;
+	width: 600px;
+	line-height: 32pt;
+	margin-top: 50px;
 }
 
-#hero-image {
+#main-hero-h2 {
+	color: white;
+}
+ 
+/*#hero-image {
 	grid-column: 8/-1;
-	/* Remove as content will dictate height */
+	Remove as content will dictate height
 	height: 582px;
+}*/
+
+#hero-btn {
+	background-color: #000;
+	color: white;
+	padding: 20px;
 }
 
 #products {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.product-box {
+	background-color: #ddd;
 }
 
 #products h2 {
@@ -136,53 +157,110 @@ you work on and the intended audience */
 	height: 507px;
 }
 
-.product-box {
-	background-color: #ddd;
+.bumper {
+	background-color: rgba(255, 255, 255, 0.628);
+	width: 536px;
+	height: 40px;
+	position: relative;
+	top:220px;
+	overflow: hidden;
+	transition: 0.9s ease;
 }
+.product_info {
+	color: #000;
+	width: 536px;
+	height: 40px;
+	position: relative;
+  }
+
+.product-box h4, p {
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+.product-box:hover .bumper {
+	transform: translateY(-204px);
+	height: 242px;
+	width: 536px;
+}
+
+/*about*/
 
 #about-con {
 	background-color: #ddd;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 60px;
 }
 
 #about-title {
-	text-align: center;
+	text-align: left;
 }
 
 #about-text {
 	grid-column: 1/8;
 	/* Remove as content will dictate height */
-	height: 700px;
+	height: fit-content;
+	text-align: left;
 }
 
-#about-image {
-	grid-column: 8/-1;
+.about-image {
 	/* Remove as content will dictate height */
-	height: 700px;
+	height: 350px;
 }
+
+#about-image1{
+	grid-column: span 2;
+	
+}
+#about-image2{
+	grid-column: span 2;
+	margin-left: 65px;
+}
+
+/* contact */
 
 #contact {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 50px;
+	margin-bottom: 10px;
 }
 
 #contact-text {
 	grid-column: 1/8;
 	/* Remove as content will dictate height */
 	height: 700px;
+	text-align: left;
 }
 
 #contact-form {
+	background-color: #ddd;
 	grid-column: 8/-1;
 	/* Remove as content will dictate height */
 	height: 700px;
 }
 
+input {
+	width: 560px;
+	height: 45px;
+	margin:0px 40px 25px 40px;
+	border: #aaaaaa;
+}
+
+input:first-child {
+	margin-top: 50px;
+}
+
+#message-box {
+	height: 200px;
+}
+
+input:last-child {
+	width: 220px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
 /*Common page elements  */
 
 #footer-con {
 	background-color: #aaaaaa;
+	margin-top: 50px;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
