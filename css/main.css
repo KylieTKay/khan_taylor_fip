@@ -20,10 +20,11 @@ div,p,body,header,footer,section,article,nav {
 }	
 
 h1, h2 {
-	font-family: 'Alice', serif;
+	font-family: 
+	'Yeseva One', cursive;
 }
 
-h3, h4 {font-family: 'Yeseva One', cursive;
+h3, h4 {font-family: 'Alice', serif;
 }
 
 p {font-family: 'Prata', serif;
@@ -31,6 +32,44 @@ p {font-family: 'Prata', serif;
 
 li, input, a {font-family: 'Bebas Neue', cursive;
 }
+
+.banner-text {
+	grid-column: 1/7;
+	/* Remove as content will dictate height */
+	/*added*/
+	text-align: left;
+	line-height: 32pt;
+	margin-top: 50px;
+}
+.banner-text h2 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 40px;
+	line-height: 63px;
+	padding-bottom: 10px;
+}
+.banner-text p {
+	font-family: 'Prata', serif;
+	font-size: 25px;
+	line-height: 18px;
+	display: inline;
+	padding-top: 0;
+}
+
+
+.banner-btn {
+	background: #000;
+	color: white;
+	font-size: 25px;
+	padding: 25px 0px 25px 30px;
+	margin-bottom: 50px;
+	grid-column: 1/2;
+	display: inline;
+	text-align: left;
+	width: 230px;
+	height: 30px;
+}
+
+
 
 img { 
 	border: none; /*Remove border if image is a link*/
@@ -48,6 +87,7 @@ body {
 /* Remove underlines from links */
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -113,23 +153,9 @@ you work on and the intended audience */
 #hero {
 	margin-top: 0px;
 	background: url("https://via.placeholder.com/674x582");
+	height: 893px;
 }
 
-
-.hero-text {
-	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 700px;
-	/*added*/
-	text-align: left;
-	width: 600px;
-	line-height: 32pt;
-	margin-top: 50px;
-}
-
-#main-hero-h2 {
-	color: white;
-}
  
 /*#hero-image {
 	grid-column: 8/-1;
@@ -137,11 +163,7 @@ you work on and the intended audience */
 	height: 582px;
 }*/
 
-#hero-btn {
-	background-color: #000;
-	color: white;
-	padding: 20px;
-}
+
 
 #products {
 	margin-top: 10px;
@@ -209,28 +231,34 @@ you work on and the intended audience */
 }
 
 #about-title {
-	text-align: left;
+	font-size: 35px;
 }
 
-#about-text {
-	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: fit-content;
-	text-align: left;
+/* #about-image-span { */
+	grid-column: 7/12;
+	display: inline-block;
 }
 
 .about-image {
 	/* Remove as content will dictate height */
-	height: 350px;
+	background: #000;
+	width: 380px;
+	height: 380px;
+	/* padding-bottom: 100px; */
 }
 
-#about-image1{
+/* #about-image1{
 	grid-column: span 2;
 	
 }
 #about-image2{
 	grid-column: span 2;
-	margin-left: 65px;
+} */
+#about-image1{	
+	margin-left: 50px;	
+}
+#about-image2{
+	margin-left: 295px;
 }
 
 /* contact */
