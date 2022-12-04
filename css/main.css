@@ -70,6 +70,12 @@ li, input, a {font-family: 'Bebas Neue', cursive;
 }
 
 
+label { 
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	color: rgb(87, 87, 87);
+	
+}
 
 img { 
 	border: none; /*Remove border if image is a link*/
@@ -152,7 +158,8 @@ you work on and the intended audience */
 
 #hero {
 	margin-top: 0px;
-	background: url("https://via.placeholder.com/674x582");
+	background-image: url('https://via.placeholder.com/1920x893');
+	background-color: grey;
 	height: 893px;
 }
 
@@ -166,43 +173,53 @@ you work on and the intended audience */
 
 
 #products {
-	margin-top: 10px;
+	margin-top: 40px;
 	margin-bottom: 10px;
 }
 
 .product-box {
-	background-color: #ddd;
+	height: 678px;
 }
 
 #products h2 {
 	grid-column: 1/-1;
 	text-align: center;
+	font-size: 45px;
+	font-family: 'Alice', serif;
+	font-weight: lighter;
+	margin-bottom: 10px;
 }
 
 #product1 {
 	grid-column: 1/5;
 	/* Remove as content will dictate height */
-	height: 507px;
+	/* height: 507px; */
+		background-image: url(https://via.placeholder.com/536x678);
+
 }
 
 #product2 {
 	grid-column: 5/9;
 	/* Remove as content will dictate height */
-	height: 507px;
+	/* height: 507px; */
+		background-image: url(https://via.placeholder.com/536x678);
+
 }
 
 #product3 {
 	grid-column: 9/-1;
 	/* Remove as content will dictate height */
-	height: 507px;
+	/* height: 507px; */
+		background-image: url(https://via.placeholder.com/536x678);
+
 }
 
 .bumper {
 	background-color: rgba(255, 255, 255, 0.628);
 	width: 536px;
-	height: 40px;
+	height: 85px;
 	position: relative;
-	top:220px;
+	top: 593px;
 	overflow: hidden;
 	transition: 0.9s ease;
 }
@@ -213,31 +230,47 @@ you work on and the intended audience */
 	position: relative;
   }
 
-.product-box h4, p {
+.product-box h4 {
+	font-size: 30px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	margin-top: 25px;
+}
+.product-box p {
+	font-size: 25px;
 	padding-left: 20px;
 	padding-bottom: 30px;
 }
 .product-box:hover .bumper {
-	transform: translateY(-204px);
+	transform: translateY(-155px);
 	height: 242px;
 	width: 536px;
 }
 
 /*about*/
 
-#about-con {
+#about {
 	background-color: #ddd;
 	margin-top: 60px;
 }
 
-#about-title {
+#about-title, #contact-title {
 	font-size: 35px;
 }
 
-/* #about-image-span { */
+#about-text {
+	margin-top: 80px;
+}
+
+/* #about-image-span { 
 	grid-column: 7/12;
 	display: inline-block;
+*/
+#about-btn {
+	position: absolute;
+	top: 2430px;
 }
+
 
 .about-image {
 	/* Remove as content will dictate height */
@@ -269,38 +302,50 @@ you work on and the intended audience */
 }
 
 #contact-text {
-	grid-column: 1/8;
-	/* Remove as content will dictate height */
-	height: 700px;
-	text-align: left;
+	margin-top: 0px;
+	padding-top: 0px;
+
 }
 
 #contact-form {
 	background-color: #ddd;
-	grid-column: 8/-1;
+	grid-column: 7/-1;
 	/* Remove as content will dictate height */
-	height: 700px;
+	margin: 40px 0px 50px 50px;
+	height: 820px;
 }
 
-input {
-	width: 560px;
+input, textarea{
+	width: 673px;
 	height: 45px;
-	margin:0px 40px 25px 40px;
+	margin: 43px 40px 0px 40px;
 	border: #aaaaaa;
+	font-size: 25px;
+	padding-left: 20px;
 }
 
-input:first-child {
-	margin-top: 50px;
+#form-fn {
+	margin-top: 87px;
 }
 
-#message-box {
+
+#contact-form label {
+	padding-left: 40px;
+	position: relative;
+	top: 35px;
+}
+
+
+#form-mb {
 	height: 200px;
+	color: rgb(87, 87, 87);
 }
 
 input:last-child {
 	width: 220px;
 	margin-top: 40px;
 	margin-bottom: 50px;
+	color: rgb(87, 87, 87);
 }
 /*Common page elements  */
 
@@ -346,14 +391,15 @@ input:last-child {
 
 /* gallery page */
 
+
 #gallery-hero-con {
 	background-color: #aaaaaa;
 	background: url("https://via.placeholder.com/1920x580");
 	height: 580px;
 }
 
-#gallery-text {
-	grid-column: 1/9;
+
+#gallery-hero-text {
 	/* Remove as content will dictate height */
 	height: 200px;
 	margin-top: 100px;
@@ -361,7 +407,7 @@ input:last-child {
 
 #gallery-controls {
 	margin-top: 200px;
-	grid-column: 6/8;
+	grid-column: 4/10;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -369,21 +415,72 @@ input:last-child {
 
 .dot {
 	background-color: #dddddd;
-	height: 30px;
-	width: 30px;
+	height: 25px;
+	width: 25px;
 	border-radius: 50%;
-	margin: 5px;
   }
+
+#dot-middle {
+	margin-left: 250px;
+	margin-right: 250px;
+}
 
 #gallery h2 {
 	grid-column: 1/-1;
 	text-align: center;
-  }
+	font-size: 45px;
+	font-family: 'Alice', serif;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
 
 .gallery-box {
-	background-color: #ddd;
-	grid-column: span 4 / span 4;
+	height: 678px;
+	margin-bottom: 20PX;
+	cursor: pointer;
+}
+
+.gallery-col01 {
+	grid-column: 1/5;
 	/* Remove as content will dictate height */
-	height: 507px;
-	margin-bottom: 20px;
+	/* height: 507px; */
+}
+
+.gallery-col02 {
+	grid-column: 5/9;
+	/* Remove as content will dictate height */
+	/* height: 507px; */
+}
+
+.gallery-col03 {
+	grid-column: 9/-1;
+	/* Remove as content will dictate height */
+	/* height: 507px; */
+}
+
+.gallery-bumper {
+	background-color: rgba(255, 255, 255, 0.628);
+	width: 536px;
+	height: 85px;
+	position: relative;
+	top: -85px;
+	overflow: hidden;
+	transition: 0.9s ease;
+}
+
+.gallery-box h4 {
+	font-size: 30px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	margin-top: 25px;
+}
+.gallery-box p {
+	font-size: 25px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+.gallery-box:hover .gallery-bumper {
+	transform: translateY(-155px);
+	height: 242px;
+	width: 536px;
 }
