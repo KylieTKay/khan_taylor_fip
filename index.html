@@ -5,6 +5,8 @@
 <title>Web Page</title>
 <link href="css/main.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Prata&family=Yeseva+One&display=swap" rel="stylesheet">
+<link href='https://css.gg/search.css' rel='stylesheet'>
+<link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
 </head>
 <!-- students must convert divs to semantic tags -->
 <body>
@@ -17,15 +19,27 @@
                 <menu id="main-nav">
                     <ul>
                         <li><a href="*"> menu</a></li>
-                        <li>menu</li>
-                        <li>menu</li>
-                        <li>menu</li>
-                        <li>menu</li>
-                        <li>menu</li>
+                        <li><a href="*"> menu</a></li>
+                        <li><a href="*"> menu</a></li>
+                        <li><a href="*"> menu</a></li>
+                        <li><a href="*"> menu</a></li>
                     </ul>
                 </menu>
-                <div id="header-box2" class="box-color">
+                <div>
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                    <button class="header-btn" id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <i class="gg-search"></i>
+                    </button>
                 </div>
+                <button class="header-btn" id="shoppingbag">
+                    <i class="gg-shopping-bag"></i>
+                </button>
+                </div>
+
+                <!-- <a href="checkout.html" id="header-box2">
+                    &#xf290;
+                </a> -->
             </div>
         </header> 
 
@@ -129,17 +143,46 @@
 
         <footer id="footer-con">
             <div class="grid-con" id="footer">
-                <div id="footer-logo" class="box-color">
-                </div>
-                <div id="footer-nav" class="box-color">
-                </div>
-                <div id="footer-newsletter1" class="box-color">
-                </div>
-                <div id="footer-newsletter2" class="box-color">
-                </div>
-                <div id="footer-social" class="box-color">
-                </div>
+                <section id="footer-group1">
+                    <div id="footer-logo" class="box-color">
+                        <!-- <img src="" alt="etc logo"> -->
+                    </div>
+                    <menu id="footer-nav">
+                        <ul>
+                            <li><a href="*"> menu</a></li>
+                            <li><a href="*"> menu</a></li>
+                            <li><a href="*"> menu</a></li>
+                            <li><a href="*"> menu</a></li>
+                            <li><a href="*"> menu</a></li>
+                        </ul>
+                    </menu>
+                </section>
+                <section id="footer-group2">
+                    <form id="footer-email">
+                        <label for="footer-nl-box" id="footer-newsletter">
+                            Sign-up for Our Newsletter Today
+                            <br>
+                        </label>
+                        <input type="email" placeholder="email" id="footer-nl-box">
+                        </input>
+                        <input type="submit" id="footer-email-submit" value="submit">
+                    </form>
+                    <ul id="footer-social">
+                        <a href="https://www.facebook.com/" class="footer-social">
+                            <img src="images/social-icons/facebook-logo.png" alt="facebook link">
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/" class="footer-social">
+                            <img src="images/social-icons/insta-logo.png" alt="facebook link">
+                        </a>
+                        <a href="https://twitter.com/i/flow/login" class="footer-social">
+                            <img src="images/social-icons/twitter-logo.png" alt="facebook link">
+                        </a>
+                    </ul>
+                </section>
             </div>
+            <p id="footer-copy">
+                All rights reserved  &copy; Et Cetera &trade; 2022
+            </p>
         </footer>
 
     </div> 
