@@ -412,20 +412,12 @@ input, textarea{
 }
 
 #footer-logo {
-	/* Remove as content will dictate height */
 	width: 120px;
 	height: 125px;
 }
 
-/* #footer-nav {
-	Remove as content will dictate height
-	height: 80px;
-	margin: 40px 180px 40px 0px;
-} */
-
 #footer-nav {
 	grid-column: 1/6;
-	/* height: 80px; */
 	padding-inline-start: 0;
 }
 
@@ -447,7 +439,6 @@ input, textarea{
 }
 
 #footer-newsletter {
-	/* margin-bottom: 20px; */
 	margin-left: 50px;
 	font-family: 'Alice', serif;
 	font-size: 35px;
@@ -459,12 +450,9 @@ input, textarea{
 }
 
 #footer-nl-box {
-	/* Remove as content will dictate height */
 	margin-right: 6px;
 	margin-top: 38px;
 	width: 501px;
-	/* grid-column: 7/10; */
-	/* margin-right: 16px; */
 }
 
 #footer-email-submit {
