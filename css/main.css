@@ -57,7 +57,7 @@ li, input, a {font-family: 'Bebas Neue', cursive;
 
 
 .banner-btn {
-	background: #000;
+	background: #b4b4b3;
 	color: white;
 	font-size: 25px;
 	padding: 25px 0px 25px 30px;
@@ -131,7 +131,7 @@ you work on and the intended audience */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -163,7 +163,6 @@ you work on and the intended audience */
 }
 
 
-
 .searchBar {
 	width: 200px;
 	position: relative;
@@ -174,11 +173,10 @@ you work on and the intended audience */
   #searchQueryInput {
 	width: 200px;
 	height: 2.8rem;
-	background: #f5f5f5;
+	background: #ebebe9;
 	outline: none;
 	border: none;
 	border-radius: 1.625rem;
-	/* padding: 0 3.5rem 0 1.5rem; */
 	padding-top: 5px;
   }
   
@@ -186,7 +184,7 @@ you work on and the intended audience */
 	width: 50px;
 	height: 50px;
 	background: #ddd;
-	color: #aaaaaa;
+	color: black;
 	border-color: #ddd;
 	border-radius: 100%;
 	outline: none;
@@ -207,18 +205,20 @@ you work on and the intended audience */
 }
 #hero {
 	margin-top: 0px;
-	background-image: url('https://via.placeholder.com/1920x893');
+	background-image: url(../images/main-desk/main-hero.jpg);
 	background-color: grey;
 	height: 893px;
 }
 
- 
-/*#hero-image {
-	grid-column: 8/-1;
-	Remove as content will dictate height
-	height: 582px;
-}*/
+#hero h2 {
+	font-family: 'Prata', serif;
+	line-height: 75px;
+	letter-spacing: 20px;
+}
 
+#hero p {
+	font-size: 35px;
+}
 
 
 #products {
@@ -242,30 +242,23 @@ you work on and the intended audience */
 
 #product1 {
 	grid-column: 1/5;
-	/* Remove as content will dictate height */
-	/* height: 507px; */
-		background-image: url(https://via.placeholder.com/536x678);
-
+	background-image: url(../images/main-desk/category_img_01.jpg);
 }
 
 #product2 {
 	grid-column: 5/9;
-	/* Remove as content will dictate height */
-	/* height: 507px; */
-		background-image: url(https://via.placeholder.com/536x678);
+	background-image: url(../images/main-desk/category_img_02.jpg);
 
 }
 
 #product3 {
 	grid-column: 9/-1;
-	/* Remove as content will dictate height */
-	/* height: 507px; */
-		background-image: url(https://via.placeholder.com/536x678);
+	background-image: url(../images/main-desk/category_img_03.jpg);
 
 }
 
 .bumper {
-	background-color: rgba(255, 255, 255, 0.628);
+	background-color: #ebebe9ad;
 	width: 536px;
 	height: 85px;
 	position: relative;
@@ -300,7 +293,7 @@ you work on and the intended audience */
 /*about*/
 
 #about {
-	background-color: #ddd;
+	background-color: #ebebe9;
 	margin-top: 60px;
 }
 
@@ -309,13 +302,9 @@ you work on and the intended audience */
 }
 
 #about-text {
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
-/* #about-image-span { 
-	grid-column: 7/12;
-	display: inline-block;
-*/
 #about-btn {
 	position: relative;
 	top: 80px;
@@ -324,25 +313,13 @@ you work on and the intended audience */
 
 
 .about-image {
-	/* Remove as content will dictate height */
 	background: #000;
-	width: 380px;
-	height: 380px;
-	/* padding-bottom: 100px; */
+	width: 760px;
+	height: 711px;
 }
 
-/* #about-image1{
-	grid-column: span 2;
-	
-}
-#about-image2{
-	grid-column: span 2;
-} */
-#about-image1{	
+#about-image{	
 	margin-left: 50px;	
-}
-#about-image2{
-	margin-left: 295px;
 }
 
 /* contact */
@@ -359,9 +336,8 @@ you work on and the intended audience */
 }
 
 #contact-form {
-	background-color: #ddd;
+	background-color: #ebebe9;
 	grid-column: 7/-1;
-	/* Remove as content will dictate height */
 	margin: 40px 0px 50px 50px;
 	height: 820px;
 }
@@ -401,7 +377,7 @@ input, textarea{
 /*Common page elements  */
 
 #footer-con {
-	background-color: #aaaaaa;
+	background-color: #b4b4b3;
 	margin-top: 50px;
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -488,15 +464,15 @@ input, textarea{
 
 #gallery-hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/1920x580");
+	background: url(../images/gallery-desk-assets/hero.jpg);
 	height: 580px;
 }
 
 
 #gallery-hero-text {
-	/* Remove as content will dictate height */
-	height: 200px;
+	background-color: rgba(255, 255, 255, 0.598);
 	margin-top: 100px;
+	padding: 20px;
 }
 
 #gallery-controls {
@@ -512,6 +488,8 @@ input, textarea{
 	height: 25px;
 	width: 25px;
 	border-radius: 50%;
+	position: relative;
+	bottom: 40px;
   }
 
 #dot-middle {
@@ -563,15 +541,16 @@ input, textarea{
 }
 
 .gallery-box h4 {
-	font-size: 30px;
+	font-size: 40px;
 	padding-left: 20px;
 	padding-bottom: 30px;
 	margin-top: 25px;
 }
 .gallery-box p {
-	font-size: 25px;
+	font-size: 30px;
 	padding-left: 20px;
 	padding-bottom: 30px;
+	font-weight: bolder;
 }
 .gallery-box:hover .gallery-bumper {
 	transform: translateY(-155px);
