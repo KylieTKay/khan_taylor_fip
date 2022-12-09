@@ -16,8 +16,8 @@
         
         <header id="header-con">
             <section  class="grid-con">
+                <h2 class="hidden">header</h2>
                 <img src="images/etc_logo.png" alt="et cetera logo" id="logo">
-                </img>
                 <menu id="main-nav">
                     <ul>
                         <li><a href="*"> about</a></li>
@@ -28,7 +28,7 @@
                 </menu>
                 <div>
                 <div class="searchBar">
-                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="">
                     <button class="header-btn" id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
                         <i class="gg-search"></i>
                     </button>
@@ -124,8 +124,8 @@
                 <form id="contact-form">
                     <input type="text" id="form-fn" placeholder="First Name">
                     <input type="text" placeholder="Last Name">
-                    <input type="email" name="" placeholder="Email">
-                    <input type="number" name="" placeholder="(XXX) XXX XXXX">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="number" name="number" placeholder="(XXX) XXX XXXX">
                     <Label for="form-mb">
                     How can we help you?
                     </Label>
@@ -139,7 +139,8 @@
 <!-- footer -->
         <footer id="footer-con">
             <div class="grid-con" id="footer">
-                <section id="footer-group1">    
+                <section id="footer-group1">   
+                    <h4 class="hidden">footer1</h4> 
                     <img src="images/etc_logo_inverse.png" alt="et cetera logo" id="footer-logo">
                     <menu id="footer-nav">
                         <ul>
@@ -151,13 +152,13 @@
                     </menu>
                 </section>
                 <section id="footer-group2">
+                    <h4 class="hidden">footer2</h4> 
                     <form id="footer-email">
                         <label for="footer-nl-box" id="footer-newsletter">
                             Sign-up for Our Newsletter Today
                             <br>
                         </label>
                         <input type="email" placeholder="email" id="footer-nl-box">
-                        </input>
                         <input type="submit" id="footer-email-submit" value="submit">
                     </form>
                     <ul id="footer-social">
